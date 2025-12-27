@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using EBAC.Core.Singleton;
+using Utils;
 
 namespace Screens
 {
@@ -22,9 +23,12 @@ namespace Screens
 
         private void Start()
         {
+            
             HideAll();
             ShowByType(startScreen);
         }
+
+        
 
         public void ShowByType(ScreenType type)
         {
